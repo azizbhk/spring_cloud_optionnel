@@ -12,10 +12,10 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: avion
-          uri: lb://EQUIPE
+        - id: voyage
+          uri: lb://VOYAGE
           predicates:
-            - Path=/equipes/**
+            - Path=/voyages/**
 
         - id: user
           uri: lb://USERS-MICROSERVICES
